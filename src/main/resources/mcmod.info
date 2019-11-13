@@ -1,0 +1,16 @@
+[
+{
+  "modid": "religionsmod",
+  "name": "Religions Mod",
+  "description": "Adds religions to minecraft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["adnre","DeaSTL"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["stryphiccore"]
+}
+]
