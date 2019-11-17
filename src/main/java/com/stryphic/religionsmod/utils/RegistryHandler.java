@@ -8,6 +8,7 @@ import com.stryphic.stryphiccore.blocks.ICoreBlock;
 import com.stryphic.stryphiccore.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.Item;
@@ -29,6 +30,12 @@ public class RegistryHandler {
             if (!event.getObject().hasCapability(ReligionPropertiesCapability.RELIGION_CAPABILITY, null)) {
                 event.addCapability(new ResourceLocation(Reference.MODID, "religion_data"), new CapabilityProvider());
             }
+        }else if(event.getObject() instanceof EntityLivingBase) {
+            EntityLivingBase entityLivingBase = (EntityLivingBase) event.getObject();
+            if (!entityLivingBase.hasCapability(ReligionPropertiesCapability.RELIGION_CAPABILITY, null)) {
+                event.addCapability(new ResourceLocation(Reference.MODID, "religion_data"), new CapabilityProvider());
+            }
+
         }
     }
     @SubscribeEvent
