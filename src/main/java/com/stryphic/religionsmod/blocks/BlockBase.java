@@ -14,6 +14,9 @@ public class BlockBase extends BlockCore {
     public BlockBase(String name) {
         super(name, Reference.MODID, Material.ROCK,Reference.RELIGIONS_MOD_TAB);
     }
+    public BlockBase(Material material,String name){
+        super(name,Reference.MODID,material,Reference.RELIGIONS_MOD_TAB);
+    }
 
     @Override
     public void addItemToRegistry() {
