@@ -1,10 +1,7 @@
 package com.stryphic.religionsmod.proxy;
 
 import com.stryphic.religionsmod.ReligionsMod;
-import com.stryphic.religionsmod.init.ModBlocks;
-import com.stryphic.religionsmod.init.ModEntities;
-import com.stryphic.religionsmod.init.ModItems;
-import com.stryphic.religionsmod.init.ModSoundEvents;
+import com.stryphic.religionsmod.init.*;
 import com.stryphic.religionsmod.utils.Reference;
 
 import com.stryphic.stryphiccore.proxy.IProxy;
@@ -32,7 +29,7 @@ public class CommonProxy implements IProxy {
         //MinecraftForge.EVENT_BUS.register(new CommonEventHandler());
         ModItems.init();
         ModBlocks.init();
-
+        ModEntityHandlers.init();
 
 
 
