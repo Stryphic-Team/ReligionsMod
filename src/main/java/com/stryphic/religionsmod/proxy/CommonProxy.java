@@ -2,11 +2,15 @@ package com.stryphic.religionsmod.proxy;
 
 import com.stryphic.religionsmod.ReligionsMod;
 import com.stryphic.religionsmod.init.ModBlocks;
+import com.stryphic.religionsmod.init.ModEntities;
 import com.stryphic.religionsmod.init.ModItems;
+import com.stryphic.religionsmod.init.ModSoundEvents;
 import com.stryphic.religionsmod.utils.Reference;
 
 import com.stryphic.stryphiccore.proxy.IProxy;
+import com.stryphic.stryphiccore.util.handlers.CommonEventHandler;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -30,6 +34,8 @@ public class CommonProxy implements IProxy {
         ModBlocks.init();
 
 
+
+
         //CoreBlocks.initOreDictionary();
         //ModItems.initOreDictionary();
 
@@ -49,7 +55,7 @@ public class CommonProxy implements IProxy {
 
     @Override
     public void postInit(FMLPostInitializationEvent event) {
-
+        ModEntities.init();
 
 
     }

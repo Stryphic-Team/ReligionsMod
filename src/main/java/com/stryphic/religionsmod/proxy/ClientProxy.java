@@ -1,6 +1,7 @@
 package com.stryphic.religionsmod.proxy;
 
 import com.stryphic.religionsmod.ReligionsMod;
+import com.stryphic.religionsmod.init.ModSoundEvents;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
@@ -27,6 +28,7 @@ public class ClientProxy extends CommonProxy {
     public void preInit(FMLPreInitializationEvent event){
         super.preInit(event);
         ReligionsMod.logger.debug("Client: Pre Intializing");
+        ModSoundEvents.init();
 
     }
     //Run when the client connects to a server or starts a new single player world

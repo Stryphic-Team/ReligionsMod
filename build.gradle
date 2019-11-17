@@ -51,7 +51,7 @@ minecraft {
 }
 
 dependencies {
-    compile 'com.stryphic:StryphicCore:0.0.1.8'
+    compile 'com.stryphic:StryphicCore:0.0.1.+'
     compile "cofh:RedstoneFlux:1.12-2.1.0.6:universal"
 }
 
